@@ -1,0 +1,60 @@
+.image-player{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.image-team{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+
+.player-box{
+    width: 230px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.image_box{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.box-name{
+    width: 100%;
+    color: #f90;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stats-list{
+    padding: 10px;
+    font-weight: light;
+}
+
+.stats-list span{
+    margin-bottom: 6px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+}
+
+.stats-list span:first-child{
+    font-size: 20px;
+    color: #ECF2FF;
+}
+
+.stats-list span:last-child{
+    margin-bottom: 0;
+}
