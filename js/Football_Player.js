@@ -181,4 +181,3 @@ class Forward extends Football_Player {
 }
 
 export {Football_Player, Goalkeeper, Defender, Midfielder, Forward};
-
