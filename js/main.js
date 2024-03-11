@@ -495,3 +495,5 @@ function changeTeam(){
 
 // Handle team select change
 teamSelect.addEventListener("change", changeTeam);
+
+
