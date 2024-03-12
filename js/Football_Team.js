@@ -43,6 +43,7 @@ class Football_Team {
 
         // Append the team div to the team container
         teamBox.appendChild(teamDiv);
+
     }
 
     addToDropdown(selectTeam) {

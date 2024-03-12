@@ -35,8 +35,8 @@ class Football_Player {
         appearancesSpan.textContent = `Appearances: ${this.appearances}`;
 
         const imagePlayer = document.createElement("img");
-        imagePlayer.classList.add("image-player")
-        imagePlayer.src = this.image
+        imagePlayer.classList.add("image-player");
+        imagePlayer.src = this.image;
         playerItem.appendChild(div_stats);
     
     
