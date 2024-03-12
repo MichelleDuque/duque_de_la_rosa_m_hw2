@@ -33,7 +33,6 @@ class Football_Team {
 
         teamBox.innerHTML = ''; 
 
-        // Create a div element for the team
         const teamDiv = document.createElement('div');
         const teamName = document.createElement('h2');
         const imgTeam = document.createElement('img');
@@ -46,19 +45,15 @@ class Football_Team {
         imgTeam.src = this.image;
         imgTeam.classList.add("image-team")
 
-        // Loop through the players and create li elements for each player
+
         this.players.forEach(player => {
             const playerItem = player.infoPlayers();
             playerList.appendChild(playerItem);
         });
 
-        // Append the team name heading and player list to the team div
-        // teamDiv.appendChild(teamName);
         teamDiv.appendChild(imgTeam);
         teamDiv.appendChild(playerList);
         
-
-        // Append the team div to the team container
         teamBox.appendChild(teamDiv);
 
     }

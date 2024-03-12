@@ -384,7 +384,6 @@ astonVilla.addPlayer(duran)
 astonVilla.addPlayer(watkins)
 
 
-// Create teams and add players
 const liverpool = new Football_Team("Liverpool", "images/liverpool.png");
 liverpool.addPlayer(alisson);
 liverpool.addPlayer(joeGomez);

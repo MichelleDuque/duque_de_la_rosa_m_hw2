@@ -912,7 +912,6 @@ astonVilla.addPlayer(mcginn);
 astonVilla.addPlayer(tielemans);
 astonVilla.addPlayer(duran);
 astonVilla.addPlayer(watkins);
-// Create teams and add players
 const liverpool = new (0, _footballTeamJs.Football_Team)("Liverpool", "images/liverpool.png");
 liverpool.addPlayer(alisson);
 liverpool.addPlayer(joeGomez);
@@ -1043,7 +1042,6 @@ class Football_Team {
             }
         });
         teamBox.innerHTML = "";
-        // Create a div element for the team
         const teamDiv = document.createElement("div");
         const teamName = document.createElement("h2");
         const imgTeam = document.createElement("img");
@@ -1053,16 +1051,12 @@ class Football_Team {
         playerList.classList.add("players");
         imgTeam.src = this.image;
         imgTeam.classList.add("image-team");
-        // Loop through the players and create li elements for each player
         this.players.forEach((player)=>{
             const playerItem = player.infoPlayers();
             playerList.appendChild(playerItem);
         });
-        // Append the team name heading and player list to the team div
-        // teamDiv.appendChild(teamName);
         teamDiv.appendChild(imgTeam);
         teamDiv.appendChild(playerList);
-        // Append the team div to the team container
         teamBox.appendChild(teamDiv);
     }
     addToDropdown(selectTeam) {
@@ -1124,13 +1118,11 @@ class Football_Player {
         playerItem.appendChild(div_image);
         playerItem.classList.add("player-box");
         div_image.classList.add("image_box");
-        // Create an h3 element for the player's name
         const div_name = document.createElement("div");
         const playerName = document.createElement("h3");
         playerName.textContent = this.name;
         playerItem.appendChild(div_name);
         div_name.classList.add("box-name");
-        // Create a span element for the position
         const div_stats = document.createElement("div");
         const positionSpan = document.createElement("span");
         div_stats.classList.add("stats-list");
@@ -1141,7 +1133,6 @@ class Football_Player {
         imagePlayer.classList.add("image-player");
         imagePlayer.src = this.image;
         playerItem.appendChild(div_stats);
-        // Append the elements to the li element
         div_image.appendChild(imagePlayer);
         div_name.appendChild(playerName);
         div_stats.appendChild(positionSpan);
@@ -1158,12 +1149,10 @@ class Goalkeeper extends Football_Player {
     infoPlayers() {
         const playerItem = super.infoPlayers();
         const div_stats = playerItem.querySelector(".stats-list");
-        // Create a span element for the cleansheet
         const cleansheetSpan = document.createElement("span");
         cleansheetSpan.textContent = `Clean Sheet: ${this.cleansheet}`;
         const saveSpan = document.createElement("span");
         saveSpan.textContent = `Saves Made: ${this.saves}`;
-        // Append the cleansheet span to the player item
         div_stats.appendChild(cleansheetSpan);
         div_stats.appendChild(saveSpan);
         return playerItem;
@@ -1178,12 +1167,10 @@ class Defender extends Football_Player {
     infoPlayers() {
         const playerItem = super.infoPlayers();
         const div_stats = playerItem.querySelector(".stats-list");
-        // Create a span element for the cleansheet
         const tacklesSpan = document.createElement("span");
         tacklesSpan.textContent = `Total Tackles: ${this.tackles}`;
         const duelsSpan = document.createElement("span");
         duelsSpan.textContent = `Aerial Duels: ${this.duels}`;
-        // Append the cleansheet span to the player item
         div_stats.appendChild(tacklesSpan);
         div_stats.appendChild(duelsSpan);
         return playerItem;
@@ -1198,12 +1185,10 @@ class Midfielder extends Football_Player {
     infoPlayers() {
         const playerItem = super.infoPlayers();
         const div_stats = playerItem.querySelector(".stats-list");
-        // Create a span element for the cleansheet
         const passesSpan = document.createElement("span");
         passesSpan.textContent = `Total Passes: ${this.passes}`;
         const goalsSpan = document.createElement("span");
         goalsSpan.textContent = `Total Goals: ${this.goals}`;
-        // Append the cleansheet span to the player item
         div_stats.appendChild(passesSpan);
         div_stats.appendChild(goalsSpan);
         return playerItem;
@@ -1218,12 +1203,10 @@ class Forward extends Football_Player {
     infoPlayers() {
         const playerItem = super.infoPlayers();
         const div_stats = playerItem.querySelector(".stats-list");
-        // Create a span element for the cleansheet
         const goalsSpan = document.createElement("span");
         goalsSpan.textContent = `Total Goals: ${this.goals}`;
         const assistsSpan = document.createElement("span");
         assistsSpan.textContent = `Total Assits: ${this.assists}`;
-        // Append the cleansheet span to the player item
         div_stats.appendChild(goalsSpan);
         div_stats.appendChild(assistsSpan);
         return playerItem;
