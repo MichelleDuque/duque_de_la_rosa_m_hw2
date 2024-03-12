@@ -1,0 +1,289 @@
+@font-face {
+  font-family: PremierLeague-Heavy;
+  src: url("PremierLeague-Heavy.d3bdd014.woff") format("woff");
+}
+
+@font-face {
+  font-family: PremierLeague-Light;
+  src: url("PremierLeague-Light.64f0af73.woff") format("woff");
+}
+
+@font-face {
+  font-family: PremierLeague-Regular;
+  src: url("PremierLeague-Regular.c7262b3b.woff") format("woff");
+}
+
+@font-face {
+  font-family: PremierLeague-Bold;
+  src: url("PremierLeague-Bold.7b0ffcd4.woff") format("woff");
+}
+
+.image-player {
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-team {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.player-box {
+  width: 230px;
+}
+
+.image_box {
+  background: linear-gradient(89.7deg, #00205f 2.8%, #84358e 97.8%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.box-name {
+  color: #f90;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 50px;
+}
+
+.stats-list {
+  font-weight: light;
+  padding: 10px;
+}
+
+.stats-list span {
+  margin-bottom: 6px;
+  font-family: Bebas Neue, sans-serif;
+  font-weight: 100;
+}
+
+.stats-list span:first-child {
+  color: #ecf2ff;
+  font-size: 20px;
+}
+
+.stats-list span:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (width >= 768px) {
+  .players {
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .player-box {
+    width: 40%;
+    margin: 20px;
+  }
+
+  .image-team {
+    width: 80px;
+  }
+
+  .image-player {
+    width: 140px;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .image-team {
+    width: 110px;
+  }
+
+  .image-player {
+    width: 160px;
+  }
+
+  .player-box {
+    width: 25%;
+    margin: 20px;
+  }
+
+  .box-name {
+    font-size: 25px;
+  }
+
+  .stats-list span {
+    font-size: 17px;
+  }
+
+  .stats-list span:first-child {
+    font-size: 27px;
+  }
+}
+
+@media screen and (width >= 1920px) {
+  .image-team {
+    width: 140px;
+  }
+
+  .image-player {
+    width: 200px;
+  }
+
+  .player-box {
+    width: 20%;
+    margin: 20px;
+  }
+
+  .box-name {
+    font-size: 31px;
+  }
+
+  .stats-list span {
+    font-size: 21px;
+  }
+
+  .stats-list span:first-child {
+    font-size: 32px;
+  }
+}
+
+body {
+  background: linear-gradient(#141e30, #243b55);
+}
+
+#title-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-title {
+  background-image: url("background.cc312e9e.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+#main-title {
+  color: #fff;
+  text-align: center;
+  font-family: PremierLeague-Heavy, sans-serif;
+  font-size: 30px;
+}
+
+#container-select {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#container-select label {
+  text-transform: uppercase;
+  color: #8594e4;
+  margin-bottom: 10px;
+  font-family: PremierLeague-Bold, sans-serif;
+  font-size: 40px;
+}
+
+#list-players {
+  text-align: center;
+}
+
+.team {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.players {
+  padding-left: 0;
+}
+
+.players li {
+  color: #fff;
+  background: radial-gradient(780px at 37.8% 100.3%, #133773 2.2%, #200750 20.2%, #1b586f 58.6%, #73582c 75%, #63135a 89.6%, #0c334c 96.1%);
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
+}
+
+ul {
+  list-style: none;
+}
+
+.stats-list {
+  flex-direction: column;
+  display: flex;
+}
+
+#container-select {
+  margin-bottom: 40px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+
+select {
+  color: #fff;
+  background-color: #6930ec;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin-top: 10px;
+  padding: 12px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+}
+
+@media screen and (width >= 768px) {
+  select {
+    width: 300px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .banner-title {
+    height: 230px;
+  }
+
+  #main-title {
+    font-size: 50px;
+  }
+
+  select {
+    width: 300px;
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (width >= 1920px) {
+  .banner-title {
+    height: 260px;
+  }
+
+  #main-title {
+    font-size: 70px;
+  }
+
+  select {
+    width: 460px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=index.34df27b5.css.map */
