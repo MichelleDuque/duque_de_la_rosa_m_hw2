@@ -1,5 +1,7 @@
 import {Football_Team} from './Football_Team.js';
 import {Football_Player, Goalkeeper, Defender, Midfielder, Forward} from './Football_Player.js';
+import { gsapanimation } from './gsapanimation.js';
+
 
 // Create players for Arsenal
 const ramsdale = new Goalkeeper("Ramsdale", "Goalkeeper", "images/ramsdale.png", 9, 30, 2);
@@ -14,7 +16,7 @@ const jesus = new Forward("Gabriel Jesus", "Forward", "images/jesus.png", 19, 4,
 // Create players for Aston Villa
 const dibu = new Goalkeeper("Martinez", "Goalkeeper", "images/dibu.png", 27, 6, 74);
 const cash = new Defender("Cash", "Full Back", "images/cash.png", 25, 41, 14)
-const digne = new Defender("Digne", "Full Back", "images/cash.png", 28, 1240, 3)
+const digne = new Defender("Digne", "Full Back", "images/digne.png", 28, 1240, 3)
 const douglas = new Midfielder("Douglas", "Central Midfielder", "images/douglas.png", 17, 846, 1)
 const mcginn = new Midfielder("McGinn", "Central Midfielder", "images/mcginn.png", 21, 920, 4)
 const tielemans = new Midfielder("Tielemans", "Central Midfielder", "images/tielemans.png", 23, 113, 2)
@@ -490,10 +492,13 @@ function changeTeam(){
 
     if (selectedTeam) {
         selectedTeam.renderTeamPlayers(listPlayersContainer);
+        gsapanimation();
     }
 }
 
 // Handle team select change
 teamSelect.addEventListener("change", changeTeam);
+
+gsapanimation();
 
 

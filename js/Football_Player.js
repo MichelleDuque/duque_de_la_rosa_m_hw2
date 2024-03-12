@@ -45,6 +45,7 @@ class Football_Player {
         div_name.appendChild(playerName);
         div_stats.appendChild(positionSpan);
         div_stats.appendChild(appearancesSpan);
+
     
         return playerItem;
     }

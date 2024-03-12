@@ -14,6 +14,23 @@ class Football_Team {
 
     renderTeamPlayers() {
         const teamBox = document.querySelector("#list-players");
+
+        gsap.fromTo('#list-players', {
+            y: 40,
+            opacity: 0,
+          },
+          {
+          delay: 0.6, 
+          duration: 1, 
+          y: 0,
+          opacity: 1,
+          ease: 'power2.easeOut',
+          stagger: {
+            from: 'start', 
+            amount: 0.6, 
+          },
+        })
+
         teamBox.innerHTML = ''; 
 
         // Create a div element for the team
