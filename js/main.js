@@ -1,6 +1,6 @@
 import {Football_Team} from './Football_Team.js';
 import {Football_Player, Goalkeeper, Defender, Midfielder, Forward} from './Football_Player.js';
-import { gsapanimation } from './gsapanimation.js';
+import { gsapanimation } from './modules/gsapanimation.js';
 
 
 // Create players for Arsenal
