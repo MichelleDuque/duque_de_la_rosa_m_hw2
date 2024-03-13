@@ -1,0 +1,23 @@
+{
+  "name": "duque_de_la_rosa_m_hw2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelleDuque/duque_de_la_rosa_m_hw2.git"
+  },
+  "keywords": [],
+  "author": "Michelle Duque <michelled_1994@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichelleDuque/duque_de_la_rosa_m_hw2/issues"
+  },
+  "homepage": "https://github.com/MichelleDuque/duque_de_la_rosa_m_hw2#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
